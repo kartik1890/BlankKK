@@ -19,7 +19,7 @@ public class AccountServiceTestCase {
 	
 	@Test(expected=com.capgemini.exceptions.InsufficientInitialBalance.class)
 	public void insufficientInitialBalanceException() throws InsufficientInitialBalance, DuplicateAccountNumberException {
-		accImpl.createAccount(10, 200);
+		accImpl.createAccount(10, 300);
 	}
 	
 	/*
